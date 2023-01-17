@@ -9,14 +9,29 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    var firstCurrency
+    @IBOutlet weak var firstCurrencyLabel: UILabel!
+    
+    @IBOutlet weak var secondCurrencyLabel: UILabel!
+    
+    @IBOutlet weak var currentRate: UILabel!
+    var labelOne = ""
+    var labelTwo = ""
+    var rate = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        firstCurrencyLabel.text = labelOne
+        secondCurrencyLabel.text = labelTwo
+        currentRate.text = rate
+        
+        
     }
     
-
+    @IBAction func recalculate(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

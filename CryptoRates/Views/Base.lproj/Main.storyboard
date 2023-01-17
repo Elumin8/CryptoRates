@@ -102,10 +102,71 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current rate is :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtB-nm-uVL">
+                                <rect key="frame" x="61.666666666666657" y="182" width="267" height="40"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <color key="textColor" red="0.51291208050000003" green="0.36350930850000002" blue="0.5851889817" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cfN-Mk-K4B">
+                                <rect key="frame" x="46" y="332" width="298" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-DD-3bS">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="35"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                        <color key="textColor" red="0.6000217417" green="0.4199070513" blue="0.67795255489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unr-ha-j3t">
+                                        <rect key="frame" x="122" y="0.0" width="54" height="35"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                        <color key="textColor" red="0.6000217417" green="0.4199070513" blue="0.67795255489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgo-nf-Med">
+                                        <rect key="frame" x="216" y="0.0" width="82" height="35"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                        <color key="textColor" red="0.6000217417" green="0.4199070513" blue="0.67795255489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMMOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8O-c5-8e6">
+                                <rect key="frame" x="48.666666666666657" y="468" width="293" height="50.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
+                                <color key="textColor" red="0.6000217417" green="0.4199070513" blue="0.67795255489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-3u-5yy">
+                                <rect key="frame" x="42.666666666666657" y="668.33333333333337" width="305" height="52"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="RECALCULATE">
+                                    <color key="titleColor" red="0.070588238540000001" green="0.019607843829999999" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="recalculate:" destination="G0f-u8-VN9" eventType="touchUpInside" id="U5Z-3P-W6S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NrW-sG-H7H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8PB-3u-5yy" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="De6-Jv-0m8"/>
+                            <constraint firstItem="UtB-nm-uVL" firstAttribute="top" secondItem="NrW-sG-H7H" secondAttribute="top" constant="135" id="FsL-6c-KFA"/>
+                            <constraint firstItem="cfN-Mk-K4B" firstAttribute="top" secondItem="UtB-nm-uVL" secondAttribute="bottom" constant="110" id="G5y-AO-REc"/>
+                            <constraint firstItem="8PB-3u-5yy" firstAttribute="top" secondItem="P8O-c5-8e6" secondAttribute="bottom" constant="150" id="I01-Bm-ZbV"/>
+                            <constraint firstItem="UtB-nm-uVL" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="Nq3-rK-5ld"/>
+                            <constraint firstItem="P8O-c5-8e6" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="TYG-QO-lDH"/>
+                            <constraint firstItem="P8O-c5-8e6" firstAttribute="top" secondItem="cfN-Mk-K4B" secondAttribute="bottom" constant="101" id="dkn-3u-bcC"/>
+                            <constraint firstItem="cfN-Mk-K4B" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="gyQ-2Q-DZY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentRate" destination="P8O-c5-8e6" id="6wr-tW-32f"/>
+                        <outlet property="firstCurrencyLabel" destination="Lcn-DD-3bS" id="Iag-Fv-wZ1"/>
+                        <outlet property="secondCurrencyLabel" destination="Tgo-nf-Med" id="HWE-As-YVx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuI-7K-d6Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
