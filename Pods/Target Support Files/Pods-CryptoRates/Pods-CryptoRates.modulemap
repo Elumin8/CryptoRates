@@ -1,0 +1,6 @@
+framework module Pods_CryptoRates {
+  umbrella header "Pods-CryptoRates-umbrella.h"
+
+  export *
+  module * { export * }
+}

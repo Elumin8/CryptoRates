@@ -1,0 +1,20 @@
+PODS:
+  - GIFImageView (0.1.0)
+  - SwiftTickerView (1.5.0)
+
+DEPENDENCIES:
+  - GIFImageView
+  - SwiftTickerView
+
+SPEC REPOS:
+  trunk:
+    - GIFImageView
+    - SwiftTickerView
+
+SPEC CHECKSUMS:
+  GIFImageView: cd6a500b9bac1942cb66b73452b97baa6e75280d
+  SwiftTickerView: e918f84d7b87b23bce82166ae8fcf902a862523c
+
+PODFILE CHECKSUM: dcfbd8a9319557b0649ee194f514a04831bb9c37
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		215B1D720DD667B5BA957A0AE65E3399 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7940E833F64B211CE3DCF2A0D4DC13 /* Renderer.swift */; };
+		43830F1B1FA9EF43ED90AC26B30F1A0F /* SwiftTickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6612536DB73D7601907FA18F02BB6D89 /* SwiftTickerView-dummy.m */; };
+		4891E37F48788BEF857E4048EA67ABF1 /* SwiftTickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A5CC044011FBE55789E28F090DF3CE /* SwiftTickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		574BA238BDE67C0A639E1F554F1D2F4E /* DefaultConditionBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0992ECB90590B10330E133E9BABE8E7 /* DefaultConditionBehaviour.swift */; };
+		58D41A79F0E92A68E72C024939735F33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E7438B12CD0AFAD6A32490366C702D /* Foundation.framework */; };
+		6250E93C0B319B9AE015E3BDC95E0BDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E7438B12CD0AFAD6A32490366C702D /* Foundation.framework */; };
+		68F28380198B197B8896364DE3C95E90 /* Pods-CryptoRates-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4B740FB9A779E12D7256BCF7E0F962 /* Pods-CryptoRates-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8516DABF0D8294097A7C44916886BFCF /* SwiftTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085D0076691CEB87B8C9754A1E416E12 /* SwiftTickerView.swift */; };
+		93091DEA63A55276A64BEF6D1EFF770B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F869DC7FEA1F565B6984ABA3E42EE21 /* ImageIO.framework */; };
+		A9A4D4EF57A9938EE7283CE02111DBC1 /* GIFImageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 323F0DBE5AD5ECCAC6CF6B5C1FD4B840 /* GIFImageView-dummy.m */; };
+		BBB12FDB29D1BD13E1353C7C8119B4B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E7438B12CD0AFAD6A32490366C702D /* Foundation.framework */; };
+		C270AC2D8EF334FEE3C2EE95693827A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF62529CFAA2D00B529B64442FD0CB98 /* UIKit.framework */; };
+		D8603A148BEEDD41D2C7DF89EEA990F1 /* SwiftTickerItemDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5669395BAE1D9CEC8631C840637C9E8D /* SwiftTickerItemDecorator.swift */; };
+		EA4E09987F0AAE0564138E93F87BE913 /* GIFImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F626FB7EF4B1D89FCCE52E0F060539EB /* GIFImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F435BB642D5A94AB229DF9359332B067 /* Pods-CryptoRates-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB16C95B79C674A86C18BC171C66FCB8 /* Pods-CryptoRates-dummy.m */; };
+		F84204A8C9B9AD4A134C51C53C6B9240 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A837C5A36B11D4B0C0480CB47D3E5 /* GIFImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3693EB0AE2E005B7A79D449173DF928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CF2A58A8F0D18EF1DE034D75E7AE5D;
+			remoteInfo = GIFImageView;
+		};
+		46979A5E8BD1BCCDB6B3CEFCFD5FC3BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB481EA11016EE88ECB588E55CD0BC0;
+			remoteInfo = SwiftTickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D727C667A7E9D10E67F7A34805102F /* Pods-CryptoRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoRates.release.xcconfig"; sourceTree = "<group>"; };
+		085D0076691CEB87B8C9754A1E416E12 /* SwiftTickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftTickerView.swift; path = SwiftTickerView/Classes/SwiftTickerView.swift; sourceTree = "<group>"; };
+		0E19031289FE5C2C30CEB265E67B65F6 /* GIFImageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GIFImageView-Info.plist"; sourceTree = "<group>"; };
+		1A7BC9A1CBCC91A6E3D44769D81B5D01 /* Pods-CryptoRates-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoRates-frameworks.sh"; sourceTree = "<group>"; };
+		2D4B740FB9A779E12D7256BCF7E0F962 /* Pods-CryptoRates-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoRates-umbrella.h"; sourceTree = "<group>"; };
+		323F0DBE5AD5ECCAC6CF6B5C1FD4B840 /* GIFImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GIFImageView-dummy.m"; sourceTree = "<group>"; };
+		376E882B4B0C72B822B8840323D75C6A /* GIFImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFImageView.release.xcconfig; sourceTree = "<group>"; };
+		4C458DD027A0E7CFCFDF3461559A32B9 /* Pods-CryptoRates-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoRates-Info.plist"; sourceTree = "<group>"; };
+		4ED96CF28750FB8C70DC6F0396105771 /* GIFImageView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GIFImageView; path = GIFImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F869DC7FEA1F565B6984ABA3E42EE21 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		54DAD0C4A8D2F0AE588667037F3E1517 /* GIFImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GIFImageView.modulemap; sourceTree = "<group>"; };
+		5669395BAE1D9CEC8631C840637C9E8D /* SwiftTickerItemDecorator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftTickerItemDecorator.swift; path = SwiftTickerView/Classes/SwiftTickerItemDecorator.swift; sourceTree = "<group>"; };
+		611113AAA2291B948A967A1C3D31D930 /* SwiftTickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTickerView-prefix.pch"; sourceTree = "<group>"; };
+		63C8D2EF444C1B671F4C2997AA004E26 /* SwiftTickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftTickerView-Info.plist"; sourceTree = "<group>"; };
+		6612536DB73D7601907FA18F02BB6D89 /* SwiftTickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTickerView-dummy.m"; sourceTree = "<group>"; };
+		6C7940E833F64B211CE3DCF2A0D4DC13 /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = SwiftTickerView/Classes/Renderer.swift; sourceTree = "<group>"; };
+		864A837C5A36B11D4B0C0480CB47D3E5 /* GIFImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFImageView.swift; path = GIFImageView/Classes/GIFImageView.swift; sourceTree = "<group>"; };
+		893BDC971BD9FEE654AB887EDF7FDF6F /* Pods-CryptoRates-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoRates-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CD78B470AEDFC57DC4A66D0DE72F78D /* GIFImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFImageView.debug.xcconfig; sourceTree = "<group>"; };
+		8DB812C200E096969C0200B66D9655D8 /* GIFImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFImageView-prefix.pch"; sourceTree = "<group>"; };
+		925C4AAD0AA8AB9F4DED1470FF3C3D01 /* SwiftTickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTickerView.debug.xcconfig; sourceTree = "<group>"; };
+		92C707221317DF2D7877A5EF56EEF461 /* Pods-CryptoRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoRates.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0992ECB90590B10330E133E9BABE8E7 /* DefaultConditionBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultConditionBehaviour.swift; path = SwiftTickerView/Classes/DefaultConditionBehaviour.swift; sourceTree = "<group>"; };
+		AB16C95B79C674A86C18BC171C66FCB8 /* Pods-CryptoRates-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoRates-dummy.m"; sourceTree = "<group>"; };
+		BF62529CFAA2D00B529B64442FD0CB98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CB158686310B4289C7A93497DA9B5369 /* SwiftTickerView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftTickerView; path = SwiftTickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6910962F4D6E67D298EAD06A0D8E11 /* SwiftTickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftTickerView.modulemap; sourceTree = "<group>"; };
+		CF1F32D1223DC2A69B5F9C8AB8D1012F /* Pods-CryptoRates */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CryptoRates"; path = Pods_CryptoRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8D931D2FDA862105CAC77D3FD81CEE /* Pods-CryptoRates.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoRates.modulemap"; sourceTree = "<group>"; };
+		D84621166F949871324E2FB3C05A5C78 /* Pods-CryptoRates-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoRates-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8E7438B12CD0AFAD6A32490366C702D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E0A5CC044011FBE55789E28F090DF3CE /* SwiftTickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTickerView-umbrella.h"; sourceTree = "<group>"; };
+		F626FB7EF4B1D89FCCE52E0F060539EB /* GIFImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFImageView-umbrella.h"; sourceTree = "<group>"; };
+		F80FEEA1B6DAB9295F7D97C651D4C09C /* SwiftTickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTickerView.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D2FEFCED03F3B2B8CC8A365DF973376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB12FDB29D1BD13E1353C7C8119B4B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503BBCFC48BED3576121D394FC504AEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D41A79F0E92A68E72C024939735F33 /* Foundation.framework in Frameworks */,
+				93091DEA63A55276A64BEF6D1EFF770B /* ImageIO.framework in Frameworks */,
+				C270AC2D8EF334FEE3C2EE95693827A9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9482EEF2263159541E0F9E989183D01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6250E93C0B319B9AE015E3BDC95E0BDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D1314D4DE56314D15304A9107ED8CBE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A049059ED19EDB80A9358E93B624048 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F31914D7A3462E1D2529A9BA7C94EE7 /* Pods-CryptoRates */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4E03D8B5209BCDF205ABC5884DB7F422 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A26FF117DA7301E52A3D88CD5F7B07DB /* GIFImageView */,
+				68C87E9EA440909A0FC35F4A54D282DA /* SwiftTickerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D1314D4DE56314D15304A9107ED8CBE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D8E7438B12CD0AFAD6A32490366C702D /* Foundation.framework */,
+				4F869DC7FEA1F565B6984ABA3E42EE21 /* ImageIO.framework */,
+				BF62529CFAA2D00B529B64442FD0CB98 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68C87E9EA440909A0FC35F4A54D282DA /* SwiftTickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A0992ECB90590B10330E133E9BABE8E7 /* DefaultConditionBehaviour.swift */,
+				6C7940E833F64B211CE3DCF2A0D4DC13 /* Renderer.swift */,
+				5669395BAE1D9CEC8631C840637C9E8D /* SwiftTickerItemDecorator.swift */,
+				085D0076691CEB87B8C9754A1E416E12 /* SwiftTickerView.swift */,
+				C90EE44AC40AD1B0B8DD57D21C60F697 /* Support Files */,
+			);
+			name = SwiftTickerView;
+			path = SwiftTickerView;
+			sourceTree = "<group>";
+		};
+		6AC3ED687634CCFBE77651C6BF28899F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4ED96CF28750FB8C70DC6F0396105771 /* GIFImageView */,
+				CF1F32D1223DC2A69B5F9C8AB8D1012F /* Pods-CryptoRates */,
+				CB158686310B4289C7A93497DA9B5369 /* SwiftTickerView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F31914D7A3462E1D2529A9BA7C94EE7 /* Pods-CryptoRates */ = {
+			isa = PBXGroup;
+			children = (
+				CF8D931D2FDA862105CAC77D3FD81CEE /* Pods-CryptoRates.modulemap */,
+				D84621166F949871324E2FB3C05A5C78 /* Pods-CryptoRates-acknowledgements.markdown */,
+				893BDC971BD9FEE654AB887EDF7FDF6F /* Pods-CryptoRates-acknowledgements.plist */,
+				AB16C95B79C674A86C18BC171C66FCB8 /* Pods-CryptoRates-dummy.m */,
+				1A7BC9A1CBCC91A6E3D44769D81B5D01 /* Pods-CryptoRates-frameworks.sh */,
+				4C458DD027A0E7CFCFDF3461559A32B9 /* Pods-CryptoRates-Info.plist */,
+				2D4B740FB9A779E12D7256BCF7E0F962 /* Pods-CryptoRates-umbrella.h */,
+				92C707221317DF2D7877A5EF56EEF461 /* Pods-CryptoRates.debug.xcconfig */,
+				01D727C667A7E9D10E67F7A34805102F /* Pods-CryptoRates.release.xcconfig */,
+			);
+			name = "Pods-CryptoRates";
+			path = "Target Support Files/Pods-CryptoRates";
+			sourceTree = "<group>";
+		};
+		A26FF117DA7301E52A3D88CD5F7B07DB /* GIFImageView */ = {
+			isa = PBXGroup;
+			children = (
+				864A837C5A36B11D4B0C0480CB47D3E5 /* GIFImageView.swift */,
+				D6CED7EE898AA9565618A94DEFEBB306 /* Support Files */,
+			);
+			name = GIFImageView;
+			path = GIFImageView;
+			sourceTree = "<group>";
+		};
+		C90EE44AC40AD1B0B8DD57D21C60F697 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD6910962F4D6E67D298EAD06A0D8E11 /* SwiftTickerView.modulemap */,
+				6612536DB73D7601907FA18F02BB6D89 /* SwiftTickerView-dummy.m */,
+				63C8D2EF444C1B671F4C2997AA004E26 /* SwiftTickerView-Info.plist */,
+				611113AAA2291B948A967A1C3D31D930 /* SwiftTickerView-prefix.pch */,
+				E0A5CC044011FBE55789E28F090DF3CE /* SwiftTickerView-umbrella.h */,
+				925C4AAD0AA8AB9F4DED1470FF3C3D01 /* SwiftTickerView.debug.xcconfig */,
+				F80FEEA1B6DAB9295F7D97C651D4C09C /* SwiftTickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftTickerView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				4E03D8B5209BCDF205ABC5884DB7F422 /* Pods */,
+				6AC3ED687634CCFBE77651C6BF28899F /* Products */,
+				3A049059ED19EDB80A9358E93B624048 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6CED7EE898AA9565618A94DEFEBB306 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54DAD0C4A8D2F0AE588667037F3E1517 /* GIFImageView.modulemap */,
+				323F0DBE5AD5ECCAC6CF6B5C1FD4B840 /* GIFImageView-dummy.m */,
+				0E19031289FE5C2C30CEB265E67B65F6 /* GIFImageView-Info.plist */,
+				8DB812C200E096969C0200B66D9655D8 /* GIFImageView-prefix.pch */,
+				F626FB7EF4B1D89FCCE52E0F060539EB /* GIFImageView-umbrella.h */,
+				8CD78B470AEDFC57DC4A66D0DE72F78D /* GIFImageView.debug.xcconfig */,
+				376E882B4B0C72B822B8840323D75C6A /* GIFImageView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GIFImageView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24EEFD1625634DD602E26E492B7DA773 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4E09987F0AAE0564138E93F87BE913 /* GIFImageView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C4F464D46976DA1F0664B4EE24C23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4891E37F48788BEF857E4048EA67ABF1 /* SwiftTickerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB5D7C26147B320434A8B5B018C833B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F28380198B197B8896364DE3C95E90 /* Pods-CryptoRates-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59CF2A58A8F0D18EF1DE034D75E7AE5D /* GIFImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47370E40E6FD78C77FD276A376DEECC0 /* Build configuration list for PBXNativeTarget "GIFImageView" */;
+			buildPhases = (
+				24EEFD1625634DD602E26E492B7DA773 /* Headers */,
+				62FD049B84869E3054CBCD699D5CF54B /* Sources */,
+				503BBCFC48BED3576121D394FC504AEB /* Frameworks */,
+				D4099A3110E1E00F05AC17DC32229E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFImageView;
+			productName = GIFImageView;
+			productReference = 4ED96CF28750FB8C70DC6F0396105771 /* GIFImageView */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAB481EA11016EE88ECB588E55CD0BC0 /* SwiftTickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DE60DF5C7D63CE4675CF18B71A16D2 /* Build configuration list for PBXNativeTarget "SwiftTickerView" */;
+			buildPhases = (
+				5B7C4F464D46976DA1F0664B4EE24C23 /* Headers */,
+				FE725843A4FAEDF3BFC22841C838C6D7 /* Sources */,
+				4D2FEFCED03F3B2B8CC8A365DF973376 /* Frameworks */,
+				39B9B61103120B7CBD323AF4C44FA4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTickerView;
+			productName = SwiftTickerView;
+			productReference = CB158686310B4289C7A93497DA9B5369 /* SwiftTickerView */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE5C567701CF724DE450AB718E4CCF99 /* Pods-CryptoRates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719B9F102BBB43247F7B4C98C96D9FF3 /* Build configuration list for PBXNativeTarget "Pods-CryptoRates" */;
+			buildPhases = (
+				FAB5D7C26147B320434A8B5B018C833B /* Headers */,
+				B6A05F25DE82BFF41D1157EFC0EC45C9 /* Sources */,
+				B9482EEF2263159541E0F9E989183D01 /* Frameworks */,
+				9F6DCFDDCB3BF47270B33CA1F2E95924 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9523320A8DE9F04FEAFFD87DE838632F /* PBXTargetDependency */,
+				4A006B82560978758325B94AAC08A523 /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoRates";
+			productName = Pods_CryptoRates;
+			productReference = CF1F32D1223DC2A69B5F9C8AB8D1012F /* Pods-CryptoRates */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6AC3ED687634CCFBE77651C6BF28899F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59CF2A58A8F0D18EF1DE034D75E7AE5D /* GIFImageView */,
+				FE5C567701CF724DE450AB718E4CCF99 /* Pods-CryptoRates */,
+				AAB481EA11016EE88ECB588E55CD0BC0 /* SwiftTickerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39B9B61103120B7CBD323AF4C44FA4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6DCFDDCB3BF47270B33CA1F2E95924 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4099A3110E1E00F05AC17DC32229E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62FD049B84869E3054CBCD699D5CF54B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84204A8C9B9AD4A134C51C53C6B9240 /* GIFImageView.swift in Sources */,
+				A9A4D4EF57A9938EE7283CE02111DBC1 /* GIFImageView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A05F25DE82BFF41D1157EFC0EC45C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F435BB642D5A94AB229DF9359332B067 /* Pods-CryptoRates-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE725843A4FAEDF3BFC22841C838C6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574BA238BDE67C0A639E1F554F1D2F4E /* DefaultConditionBehaviour.swift in Sources */,
+				215B1D720DD667B5BA957A0AE65E3399 /* Renderer.swift in Sources */,
+				D8603A148BEEDD41D2C7DF89EEA990F1 /* SwiftTickerItemDecorator.swift in Sources */,
+				8516DABF0D8294097A7C44916886BFCF /* SwiftTickerView.swift in Sources */,
+				43830F1B1FA9EF43ED90AC26B30F1A0F /* SwiftTickerView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A006B82560978758325B94AAC08A523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftTickerView;
+			target = AAB481EA11016EE88ECB588E55CD0BC0 /* SwiftTickerView */;
+			targetProxy = 46979A5E8BD1BCCDB6B3CEFCFD5FC3BF /* PBXContainerItemProxy */;
+		};
+		9523320A8DE9F04FEAFFD87DE838632F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GIFImageView;
+			target = 59CF2A58A8F0D18EF1DE034D75E7AE5D /* GIFImageView */;
+			targetProxy = 3693EB0AE2E005B7A79D449173DF928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1543045030EB50B5610E5FFC4802702E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C707221317DF2D7877A5EF56EEF461 /* Pods-CryptoRates.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57107AEB882AB8314B76A9ED33301DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80FEEA1B6DAB9295F7D97C651D4C09C /* SwiftTickerView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTickerView/SwiftTickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTickerView/SwiftTickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftTickerView/SwiftTickerView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftTickerView;
+				PRODUCT_NAME = SwiftTickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60B94650B8072D4723AA6B106FA0F0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD78B470AEDFC57DC4A66D0DE72F78D /* GIFImageView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GIFImageView/GIFImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GIFImageView/GIFImageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GIFImageView/GIFImageView.modulemap";
+				PRODUCT_MODULE_NAME = GIFImageView;
+				PRODUCT_NAME = GIFImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		843D95B595279B48E56AFDC200D8E96D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D727C667A7E9D10E67F7A34805102F /* Pods-CryptoRates.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		977BB59DE19DFC073CF151B424B1391A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376E882B4B0C72B822B8840323D75C6A /* GIFImageView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GIFImageView/GIFImageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GIFImageView/GIFImageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GIFImageView/GIFImageView.modulemap";
+				PRODUCT_MODULE_NAME = GIFImageView;
+				PRODUCT_NAME = GIFImageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A9745A9B482BBAC2D7EC21789F84C75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 925C4AAD0AA8AB9F4DED1470FF3C3D01 /* SwiftTickerView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTickerView/SwiftTickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTickerView/SwiftTickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftTickerView/SwiftTickerView.modulemap";
+				PRODUCT_MODULE_NAME = SwiftTickerView;
+				PRODUCT_NAME = SwiftTickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47370E40E6FD78C77FD276A376DEECC0 /* Build configuration list for PBXNativeTarget "GIFImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B94650B8072D4723AA6B106FA0F0D8 /* Debug */,
+				977BB59DE19DFC073CF151B424B1391A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719B9F102BBB43247F7B4C98C96D9FF3 /* Build configuration list for PBXNativeTarget "Pods-CryptoRates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1543045030EB50B5610E5FFC4802702E /* Debug */,
+				843D95B595279B48E56AFDC200D8E96D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91DE60DF5C7D63CE4675CF18B71A16D2 /* Build configuration list for PBXNativeTarget "SwiftTickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9745A9B482BBAC2D7EC21789F84C75A /* Debug */,
+				57107AEB882AB8314B76A9ED33301DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

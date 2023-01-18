@@ -17,11 +17,12 @@ struct CryptoRatesModel {
     let secondCurrencyArray = ["Choose Fiat","USD","EUR","GBP","UAH","INR","AED","AMD","AUD","AZN","BRL","BSD","BYN","CAD","CHF","CLP","CNY","COP","DKK","JPY","KRW","KZT","MXN","RUB","TRY"]
     
     let apiURL = "https://rest.coinapi.io/v1/exchangerate"
-    let apiKey = "DC74734C-6828-431C-A8AE-10AC9064EB55"
+    let apiKey = "64B861E1-7586-437E-8F91-CFB90F2E12BE"
     
     
     func fetchCurrency(from firstCurrency: String, to secondCurrency:String){
         let finalURL = "\(apiURL)/\(firstCurrency)/\(secondCurrency)?apikey=\(apiKey)"
+        
         if let url = URL(string: finalURL){
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) {data, response, error in

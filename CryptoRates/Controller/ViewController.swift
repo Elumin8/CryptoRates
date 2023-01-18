@@ -17,7 +17,7 @@ class ViewController: UIViewController{
     private var model = CryptoRatesModel()
     private var firstCurrencyLabel = ""
     private var secondCurrencyLabel = ""
-    var rate = "12222.22222"
+    var rate = "limit exceeded"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,7 @@ class ViewController: UIViewController{
         secondPicker.dataSource = self
         secondPicker.delegate = self
         bitCoinButton.setImage(UIImage(named: "bitcoin_pink"), for: .normal)
+        
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -38,31 +39,21 @@ class ViewController: UIViewController{
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{
-                let destinationVC = segue.destination as! ResultViewController
-                destinationVC.labelOne = self.firstCurrencyLabel
-                destinationVC.labelTwo = self.secondCurrencyLabel
-                destinationVC.rate = rate
-
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.labelOne = self.firstCurrencyLabel
+            destinationVC.labelTwo = self.secondCurrencyLabel
+            destinationVC.rate = rate
+            
             
         }
     }
- 
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
     
 }
 //MARK: - PickerViewDelegate
-extension ViewController : CryptoRatesModelDelegate{
-    func didFailWithError(error: Error) {
-        print(error)
-    }
-    
-    func didUpdateCurrencyRate(price: String, firstCurrency: String, secondCurrency: String) {
-            self.firstCurrencyLabel = firstCurrency
-            self.secondCurrencyLabel = secondCurrency
-            self.rate = price
-    }
-    
-    
-}
+
 
 extension ViewController :UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -72,13 +63,24 @@ extension ViewController :UIPickerViewDelegate{
         if pickerView.tag == 2 {
             secondCurrencyLabel = model.secondCurrencyArray[row]
             model.fetchCurrency(from: firstCurrencyLabel, to: secondCurrencyLabel)
-            print()
         }
         
     }
 }
 //MARK: - CryptoRatesModelDelegate
-
+extension ViewController : CryptoRatesModelDelegate{
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
+    func didUpdateCurrencyRate(price: String, firstCurrency: String, secondCurrency: String) {
+        self.firstCurrencyLabel = firstCurrency
+        self.secondCurrencyLabel = secondCurrency
+        self.rate = price
+    }
+    
+    
+}
 
 
 //MARK: -  PickerViewDataSource
@@ -104,7 +106,7 @@ extension ViewController: UIPickerViewDataSource{
             return model.secondCurrencyArray[row]
         }
     }
-    
 }
+    
 
 
