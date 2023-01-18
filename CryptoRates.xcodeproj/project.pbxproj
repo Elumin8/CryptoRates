@@ -135,7 +135,6 @@
 				CB99DC152975936300852F61 /* Sources */,
 				CB99DC162975936300852F61 /* Frameworks */,
 				CB99DC172975936300852F61 /* Resources */,
-				0BF7BF4938B7057734880BC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,23 +192,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BF7BF4938B7057734880BC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ACFB0AE7CBD884D87ED01549 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

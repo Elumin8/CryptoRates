@@ -6,6 +6,5 @@ target 'CryptoRates' do
   use_frameworks!
 
   # Pods for CryptoRates
-pod 'GIFImageView'
-pod 'SwiftTickerView'
+
 end
