@@ -45,6 +45,7 @@ class ViewController: UIViewController{
         multipier = numberChoice
         if sender.isSelected{
             self.textField.text = .none
+            self.textField.backgroundColor = .black
         }
         self.textField.endEditing(true)
     }
@@ -54,6 +55,10 @@ class ViewController: UIViewController{
         tenButton.isSelected = false
         fiftyButton.isSelected = false
         hundredButton.isSelected = false
+        textField.clearsOnBeginEditing = true
+        textField.backgroundColor = UIColor.white
+        textField.textColor = UIColor.black
+        
         
     }
     
@@ -120,12 +125,24 @@ extension ViewController: UIPickerViewDataSource{
         }
     }
 }
+//MARK: - UITextFieldDelegate
+
+
 extension ViewController: UITextFieldDelegate{
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        let doubleText = Double(textField.text ?? "33")!
+        let doubleText = Double(textField.text ?? "33") ?? 1
         multipier = doubleText
         print(multipier)
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 3
+        if textField.text!.count <= maxLength{
+            return true
+        }else{
+            textField.text = .none
+            return false
+        }
     }
 }
     
