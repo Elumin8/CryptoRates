@@ -13,43 +13,68 @@ class ViewController: UIViewController{
     @IBOutlet weak var firstPicker: UIPickerView!
     @IBOutlet weak var secondPicker: UIPickerView!
     @IBOutlet weak var bitCoinButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var oneButton: UIButton!
+    @IBOutlet weak var tenButton: UIButton!
+    @IBOutlet weak var fiftyButton: UIButton!
+    @IBOutlet weak var hundredButton: UIButton!
     
     private var model = CryptoRatesModel()
     private var firstCurrencyLabel = ""
     private var secondCurrencyLabel = ""
-    var rate = "limit exceeded"
-    
+    var multipier = 1.0
     override func viewDidLoad() {
         super.viewDidLoad()
-        model.delegate = self
+        textField.delegate = self
         firstPicker.dataSource = self
         firstPicker.delegate = self
         secondPicker.dataSource = self
         secondPicker.delegate = self
         bitCoinButton.setImage(UIImage(named: "bitcoin_pink"), for: .normal)
+        textField.attributedPlaceholder = NSAttributedString(string: "99", attributes: [NSAttributedString.Key.foregroundColor:UIColor.lightGray])
+    }
+    
+    @IBAction func multipierSelected(_ sender: UIButton) {
+        oneButton.isSelected = false
+        tenButton.isSelected = false
+        fiftyButton.isSelected = false
+        hundredButton.isSelected = false
+        sender.isSelected = true
+        let choice = sender.currentTitle!
+        let numberChoice = Double(choice)!
+        multipier = numberChoice
+        if sender.isSelected{
+            self.textField.text = .none
+        }
+        self.textField.endEditing(true)
+    }
+    
+    @IBAction func textFieldAction(_ sender: UITextField) {
+        oneButton.isSelected = false
+        tenButton.isSelected = false
+        fiftyButton.isSelected = false
+        hundredButton.isSelected = false
         
     }
     
+    
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
-        
+        model.fetchCurrency(from: firstCurrencyLabel, to: secondCurrencyLabel)
         performSegue(withIdentifier: "goToResult", sender: self)
-        
-        
+        self.textField.endEditing(true)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult"{
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.labelOne = self.firstCurrencyLabel
-            destinationVC.labelTwo = self.secondCurrencyLabel
-            destinationVC.rate = rate
+            destinationVC.labelOne = firstCurrencyLabel
+            destinationVC.labelTwo = secondCurrencyLabel
+            destinationVC.multiplier = multipier
             
             
         }
     }
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+
+    
     
 }
 //MARK: - PickerViewDelegate
@@ -57,29 +82,17 @@ class ViewController: UIViewController{
 
 extension ViewController :UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.textField.endEditing(true)
         if pickerView.tag == 1{
             firstCurrencyLabel = model.firstCurrencyArray[row]
-        }
+                    }
         if pickerView.tag == 2 {
             secondCurrencyLabel = model.secondCurrencyArray[row]
-            model.fetchCurrency(from: firstCurrencyLabel, to: secondCurrencyLabel)
+
         }
         
+        
     }
-}
-//MARK: - CryptoRatesModelDelegate
-extension ViewController : CryptoRatesModelDelegate{
-    func didFailWithError(error: Error) {
-        print(error)
-    }
-    
-    func didUpdateCurrencyRate(price: String, firstCurrency: String, secondCurrency: String) {
-        self.firstCurrencyLabel = firstCurrency
-        self.secondCurrencyLabel = secondCurrency
-        self.rate = price
-    }
-    
-    
 }
 
 
@@ -105,6 +118,14 @@ extension ViewController: UIPickerViewDataSource{
         }else{
             return model.secondCurrencyArray[row]
         }
+    }
+}
+extension ViewController: UITextFieldDelegate{
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        let doubleText = Double(textField.text ?? "33")!
+        multipier = doubleText
+        print(multipier)
     }
 }
     

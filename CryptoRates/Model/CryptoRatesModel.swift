@@ -18,8 +18,6 @@ struct CryptoRatesModel {
     
     let apiURL = "https://rest.coinapi.io/v1/exchangerate"
     let apiKey = "64B861E1-7586-437E-8F91-CFB90F2E12BE"
-    
-    
     func fetchCurrency(from firstCurrency: String, to secondCurrency:String){
         let finalURL = "\(apiURL)/\(firstCurrency)/\(secondCurrency)?apikey=\(apiKey)"
         
@@ -32,9 +30,11 @@ struct CryptoRatesModel {
                 }
                 if let safeData = data{
                     if let firstCurrencyPrice = parseJSON(currencyData: safeData){
-                        let price = String(format: "%.5f", firstCurrencyPrice)
+                        let price = String(format: "%.3f", firstCurrencyPrice)
                         delegate?.didUpdateCurrencyRate(price: price, firstCurrency: firstCurrency, secondCurrency: secondCurrency)
                     }
+                    
+                       
                 }
                 
             }
@@ -53,4 +53,5 @@ struct CryptoRatesModel {
         }
         
     }
+    
 }

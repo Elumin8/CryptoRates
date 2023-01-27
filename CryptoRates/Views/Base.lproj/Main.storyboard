@@ -21,22 +21,98 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="kKK-r6-XG4">
-                                <rect key="frame" x="35" y="161" width="320" height="622"/>
+                                <rect key="frame" x="18" y="121.66666666666669" width="354" height="701"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CryptoRates!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQh-97-rA6">
-                                        <rect key="frame" x="66.333333333333329" y="0.0" width="187.33333333333337" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CryptoRates! Check rates now!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQh-97-rA6">
+                                        <rect key="frame" x="19" y="0.0" width="316" height="17"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FROM :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3T-ck-o0i">
-                                        <rect key="frame" x="106.33333333333334" y="52" width="107.33333333333334" height="30"/>
+                                        <rect key="frame" x="123.33333333333334" y="51.999999999999986" width="107.33333333333334" height="30"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                         <color key="textColor" red="0.60002174168723643" green="0.41990705132049433" blue="0.67795255489292927" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="CPb-TP-bBZ">
+                                        <rect key="frame" x="0.0" y="117" width="354" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b89-Co-k7P">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="oTV-PL-cpG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="multipierSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWM-XG-kKT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5O-wW-TYk">
+                                                <rect key="frame" x="57" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="KW4-Zf-Svj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="10">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="multipierSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ZZ-3M-bDl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvq-3Q-LlV">
+                                                <rect key="frame" x="126" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="7fm-oy-UHr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="50">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="multipierSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zD7-hR-EQX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCk-TY-5At">
+                                                <rect key="frame" x="195" y="0.0" width="44" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="100">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="multipierSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBp-3q-zXc"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="99" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rgW-yg-ejZ">
+                                                <rect key="frame" x="264" y="0.0" width="90" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="iSl-Lq-qAT"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="textFieldAction:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="yN3-cG-xzi"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                     <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="heo-Nq-FdQ">
-                                        <rect key="frame" x="0.0" y="117" width="320" height="110"/>
+                                        <rect key="frame" x="17" y="196" width="320" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="dln-KK-klk"/>
                                         </constraints>
@@ -47,19 +123,19 @@
                                         </userDefinedRuntimeAttributes>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVo-Xh-uGk">
-                                        <rect key="frame" x="127.33333333333334" y="262" width="65.333333333333343" height="30"/>
+                                        <rect key="frame" x="144.33333333333334" y="341" width="65.333333333333343" height="30"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
                                         <color key="textColor" red="0.51291208049817749" green="0.36350930851680746" blue="0.58518898166767674" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYv-Dl-VWT">
-                                        <rect key="frame" x="0.0" y="327" width="320" height="110"/>
+                                        <rect key="frame" x="17" y="405.99999999999994" width="320" height="110.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="g5N-eQ-FOd"/>
                                         </constraints>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJh-Rb-XSz">
-                                        <rect key="frame" x="85" y="472" width="150" height="150"/>
+                                        <rect key="frame" x="102" y="551" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="NA4-ey-7ro"/>
                                             <constraint firstAttribute="width" constant="150" id="VW6-kQ-K0i"/>
@@ -67,7 +143,6 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkU-xO-1pb"/>
-                                            <segue destination="G0f-u8-VN9" kind="presentation" identifier="goToResult" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="DH9-7n-VZc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -87,13 +162,19 @@
                     <navigationItem key="navigationItem" title="CRYPTORATES" id="yug-xv-ONL"/>
                     <connections>
                         <outlet property="bitCoinButton" destination="vJh-Rb-XSz" id="PUk-tb-A4p"/>
+                        <outlet property="fiftyButton" destination="Cvq-3Q-LlV" id="rHf-Qb-zJe"/>
                         <outlet property="firstPicker" destination="heo-Nq-FdQ" id="Pu3-bQ-DPj"/>
+                        <outlet property="hundredButton" destination="QCk-TY-5At" id="df1-Uj-he3"/>
+                        <outlet property="oneButton" destination="b89-Co-k7P" id="Bo6-HX-Nwo"/>
                         <outlet property="secondPicker" destination="iYv-Dl-VWT" id="vOR-F1-T31"/>
+                        <outlet property="tenButton" destination="t5O-wW-TYk" id="9yd-uC-q4l"/>
+                        <outlet property="textField" destination="rgW-yg-ejZ" id="Ums-ff-HQz"/>
+                        <segue destination="G0f-u8-VN9" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="Qic-xj-WC3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.92307692307691" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="1002" y="-2"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="4d0-mf-CCa">
@@ -136,14 +217,14 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMMOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8O-c5-8e6">
-                                <rect key="frame" x="48.666666666666657" y="468" width="293" height="50.333333333333371"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="50"/>
-                                <color key="textColor" red="0.6000217417" green="0.4199070513" blue="0.67795255489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AMMOUNT" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8O-c5-8e6">
+                                <rect key="frame" x="44" y="468" width="302.33333333333331" height="71.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-3u-5yy">
-                                <rect key="frame" x="42.666666666666657" y="668.33333333333337" width="305" height="52"/>
+                                <rect key="frame" x="42.666666666666657" y="689.66666666666663" width="305" height="52"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="RECALCULATE">
@@ -160,9 +241,9 @@
                             <constraint firstItem="8PB-3u-5yy" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="De6-Jv-0m8"/>
                             <constraint firstItem="UtB-nm-uVL" firstAttribute="top" secondItem="NrW-sG-H7H" secondAttribute="top" constant="135" id="FsL-6c-KFA"/>
                             <constraint firstItem="cfN-Mk-K4B" firstAttribute="top" secondItem="UtB-nm-uVL" secondAttribute="bottom" constant="110" id="G5y-AO-REc"/>
-                            <constraint firstItem="8PB-3u-5yy" firstAttribute="top" secondItem="P8O-c5-8e6" secondAttribute="bottom" constant="150" id="I01-Bm-ZbV"/>
                             <constraint firstItem="UtB-nm-uVL" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="Nq3-rK-5ld"/>
                             <constraint firstItem="P8O-c5-8e6" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="TYG-QO-lDH"/>
+                            <constraint firstItem="NrW-sG-H7H" firstAttribute="bottom" secondItem="8PB-3u-5yy" secondAttribute="bottom" constant="68.329999999999998" id="aee-VG-Xvi"/>
                             <constraint firstItem="P8O-c5-8e6" firstAttribute="top" secondItem="cfN-Mk-K4B" secondAttribute="bottom" constant="101" id="dkn-3u-bcC"/>
                             <constraint firstItem="cfN-Mk-K4B" firstAttribute="centerX" secondItem="wC4-9e-mzR" secondAttribute="centerX" id="gyQ-2Q-DZY"/>
                         </constraints>
